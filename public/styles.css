@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #d2b48c; /* Tan */
+    color: #2e8b57; /* Forest Green */
+}
+
+h1, h2, h3, h4 {
+    color: #2e8b57; /* Forest Green */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th{
+    padding: 10px;
+    text-align: left;
+    color:black;
+}
+
+td {
+    border: 1px solid black; /* Forest Green */
+    padding: 10px;
+    text-align: left;
+    color:black;
+}
+
+th {
+    background-color: #2e8b57; /* Forest Green */
+    color: #fff;
+}
+
+/* Add border to the table cells */
+table tr td,
+table tr th {
+    border: 2px solid black; /* Change the color and thickness as needed */
+}
+
+/* Optional: Remove inner borders if you only want the outer border */
+table {
+    border-collapse: collapse;
+}
+
+table tr td:first-child,
+table tr th:first-child {
+    border-left: 2px solid black; /* Left border */
+}
+
+table tr td:last-child,
+table tr th:last-child {
+    border-right: 2px solid black; /* Right border */
+}
+
+table tr:first-child td,
+table tr:first-child th {
+    border-top: 2px solid black; /* Top border */
+}
+
+table tr:last-child td,
+table tr:last-child th {
+    border-bottom: 2px solid black; /* Bottom border */
+}
+
+
+tfoot{
+    background-color: #2e8b57; /* Forest Green */
+    color: #fff;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.hover-box {
+    width: 200px;
+    height: 100px;
+    background-color: forestgreen;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid darkgreen;
+    transition: all 0.3s ease; /* Smooth transition for the hover effect */
+}
+
+.hover-box:hover {
+    background-color: tan;
+    color: black;
+    border-color: darkred;
+    transform: scale(1.1); /* Optional: Scale up the box slightly on hover */
+}
+
+.table-row:hover {
+    background-color: forestgreen; /* Change this to the color you prefer for highlighting */
+}
+

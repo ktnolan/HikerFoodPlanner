@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome to the Meal Planner App</h1>
+    <div>
+        <label for="sort">Sort by: </label>
+        <select id="sort">
+            <option value="name">Name</option>
+            <option value="calories">Calories</option>
+            <option value="fat">Fat</option>
+            <option value="protein">Protein</option>
+            <option value="carbs">Carbs</option>
+        </select>
+        <button id="sort-button">Sort</button>
+    </div>
+    <table id="foodItemsTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Calories</th>
+                <th>Fat (g)</th>
+                <th>Protein (g)</th>
+                <th>Carbs (g)</th>
+            </tr>
+        </thead>
+        <tbody id="food-list"></tbody>
+        
+    </table>
+
+    <h2>Meal Planner</h2>
+    <table id="mealPlannerTable">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Calories</th>
+                <th>Fat (g)</th>
+                <th>Protein (g)</th>
+                <th>Carbs (g)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Meal planner items will go here -->
+        </tbody>
+        <tfoot>
+            <tr id="summaryRow">
+                <!-- Summary row, initially empty -->
+            </tr>
+        </tfoot>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
